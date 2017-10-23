@@ -29,6 +29,7 @@ public class PdfTableReader {
     private PdfTableSettings settings;
 
     static {
+        nu.pattern.OpenCV.loadShared();
         System.loadLibrary(Core.NATIVE_LIBRARY_NAME);
     }
 
